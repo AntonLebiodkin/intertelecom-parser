@@ -1,12 +1,11 @@
 /**
  * Created by root on 23.07.16.
  */
-exports = (function(res, err){
+var cheerio = require('cheerio'),
+    iconv = require('iconv-lite'),
+    rp = require('request-promise');
 
-    var cheerio = require('cheerio'),
-        iconv = require('iconv-lite'),
-        rp = require('request-promise');
-
+module.exports = (function(res, err){
     var requestObject = {
         url: 'http://www.intertelecom.ua/ru/3g-internet#tariffs',
         encoding: null

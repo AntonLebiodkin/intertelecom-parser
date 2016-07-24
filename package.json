@@ -2,7 +2,7 @@
   "name": "intertelecom-parser",
   "version": "1.0.0",
   "description": "intertelecom rates parsing",
-  "main": "parse.js",
+  "main": "intertelecom-parser.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
