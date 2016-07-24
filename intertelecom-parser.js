@@ -6,6 +6,7 @@ var cheerio = require('cheerio'),
     rp = require('request-promise');
 
 module.exports = (function(res, err){
+    
     var requestObject = {
         url: 'http://www.intertelecom.ua/ru/3g-internet#tariffs',
         encoding: null
@@ -78,6 +79,5 @@ module.exports = (function(res, err){
             parsed_objects_arr.push(o);
         });
         return parsed_objects_arr;
-
     }
 })(function(res){console.log(res)}, {});
